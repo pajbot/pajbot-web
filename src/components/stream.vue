@@ -6,6 +6,6 @@
       &nbsp;&mdash;&nbsp;
       <a class="mdl-navigation__link" v-link="{ name: 'stream-dashboard', params: { stream: $route.params.stream } }">Dashboard</a>
       </nav>
-    <router-view></router-view>
+      <router-view></router-view>
   </div>
 </template>

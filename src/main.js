@@ -9,7 +9,7 @@ Vue.use(VueRouter)
 /* eslint-disable no-new */
 var router = new VueRouter({
   history: true,
-  root: '/pajbot/dist'
+  root: '/'
 })
 
 var NotFound = Vue.extend({
