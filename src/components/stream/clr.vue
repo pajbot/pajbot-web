@@ -29,7 +29,7 @@ let addEmote = function (emote) {
     } break
 
     case 'emoji': {
-
+      url = 'https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.6/assets/png/' + emote.id + '.png'
     } break
   }
 
