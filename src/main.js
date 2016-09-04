@@ -16,38 +16,52 @@ var NotFound = Vue.extend({
   template: '<h4>404 - Page not found</h4>'
 })
 
+import Root from './components/root'
 import Home from './components/home'
 import About from './components/about'
 import Stream from './components/stream'
 import StreamHome from './components/stream/home'
 import StreamDashboard from './components/stream/dashboard'
+import StreamCLR from './components/stream/clr'
 
 router.map({
   '*': {
     component: NotFound
   },
 
+  '/s/:stream/clr': {
+    component: StreamCLR,
+    name: 'stream-clr'
+  },
+
   '/': {
-    component: Home,
-    exact: true
-  },
-
-  '/about': {
-    component: About
-  },
-
-  '/s/:stream': {
-    component: Stream,
-    name: 'stream',
+    component: Root,
+    name: 'root',
+    exact: true,
 
     subRoutes: {
       '/': {
-        component: StreamHome,
-        name: 'stream-home'
+        component: Home
       },
-      '/dashboard': {
-        component: StreamDashboard,
-        name: 'stream-dashboard'
+
+      '/about': {
+        component: About
+      },
+
+      '/s/:stream': {
+        component: Stream,
+        name: 'stream',
+
+        subRoutes: {
+          '/': {
+            component: StreamHome,
+            name: 'stream-home'
+          },
+          '/dashboard': {
+            component: StreamDashboard,
+            name: 'stream-dashboard'
+          }
+        }
       }
     }
   }
