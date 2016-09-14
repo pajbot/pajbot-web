@@ -28,6 +28,10 @@ let addEmote = function (emote) {
       url = 'https://static-cdn.jtvnw.net/emoticons/v1/' + emote.id + '/' + scale + '.0'
     } break
 
+    case 'ffz': {
+      url = 'http://cdn.frankerfacez.com/emoticon/' + emote.id + '/4'
+    } break
+
     case 'emoji': {
       url = 'https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.6/assets/png/' + emote.id + '.png'
     } break
