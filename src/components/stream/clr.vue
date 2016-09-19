@@ -29,7 +29,7 @@ let addEmote = function (emote) {
     } break
 
     case 'ffz': {
-      url = 'http://cdn.frankerfacez.com/emoticon/' + emote.id + '/4'
+      url = 'http://cdn.frankerfacez.com/emoticon/' + emote.id + '/' + emote.max_scale
     } break
 
     case 'emoji': {
