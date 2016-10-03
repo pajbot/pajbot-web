@@ -47,8 +47,6 @@ let addEmote = function (emote) {
   let windowWidth = w.innerWidth || e.clientWidth || g.clientWidth
   let windowHeight = w.innerHeight || e.clientHeight || g.clientHeight
 
-  console.log(divWidth)
-
   let emoteData = {
     id: ++id,
     url: url,
