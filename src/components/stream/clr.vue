@@ -7,7 +7,7 @@
 <script>
 import ReconnectableWebSocket from 'reconnectable-websocket'
 
-let socket = new ReconnectableWebSocket('wss://' + window.location.hostname + ':2355/ws/clr')
+let socket = new ReconnectableWebSocket('wss://' + window.location.hostname + '/ws/clr')
 
 let innerEmotes = []
 
