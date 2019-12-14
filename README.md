@@ -1,6 +1,6 @@
 # pajbot
 
-![pajaH](http://i.imgur.com/X8IHlKl.png)
+NOTE: not used, this was an experiment with vue
 
 > website for pajbot
 
